@@ -5,7 +5,9 @@
   "main": "Gulpfile.js",
   "scripts": {
     "bundle-install": "echo Gemfile.lock > .git/info/exclude && rm -f Gemfile.lock && bundle exec bundle install && git update-index --assume-unchanged Gemfile.lock",
-    "heroku-postbuild": "gulp build.clean && gulp slug.prep"
+    "heroku-postbuild": "gulp build.clean && gulp slug.prep",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "engines": {
     "node": "6.11.1"
@@ -83,6 +85,8 @@
     "sendgrid": "^5.1.0",
     "tiny-lr": "0.0.5",
     "twilio": "^3.6.7",
-    "twitter": "^1.7.1"
-  }
+    "twitter": "^1.7.1",
+    "snyk": "^1.161.2"
+  },
+  "snyk": true
 }
