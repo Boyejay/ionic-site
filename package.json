@@ -41,7 +41,7 @@
     "express": "^4.12.3",
     "express-ab": "^0.7.0",
     "express-nunjucks": "^2.2.3",
-    "gulp": "^3.9.1",
+    "gulp": "^5.0.0",
     "gulp-autoprefixer": "3.1.1",
     "gulp-cache": "^0.4.1",
     "gulp-cache-bust": "perrygovier/gulp-cache-bust",
